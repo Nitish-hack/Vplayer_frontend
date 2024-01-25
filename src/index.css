@@ -1,3 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +16,55 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.content{
+  min-height: 90vh;
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+  color: rgb(233, 231, 231);
+}
+
+.footer{
+  min-height: 10vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+  background-color: #091641;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+ 
+}
+input::placeholder{
+  color:#172554;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+textarea::placeholder{
+  color:#172554;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+textarea{
+  height: 150px;
+}
+
+.gradient{
+  background: hsla(29, 85%, 55%, 1);
+background: linear-gradient(135deg, hsla(29, 85%, 55%, 1) 0%, hsla(226, 57%, 21%, 1) 100%);
+background: -moz-linear-gradient(135deg, hsla(29, 85%, 55%, 1) 0%, hsla(226, 57%, 21%, 1) 100%);
+background: -webkit-linear-gradient(135deg, hsla(29, 85%, 55%, 1) 0%, hsla(226, 57%, 21%, 1) 100%);
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EE8B2D", endColorstr="#172554", GradientType=1 );
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* media queries */
+@media screen and (max-width:1000px){
+  .content{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
