@@ -41,7 +41,7 @@ const Upload = () => {
                     <textarea value={description}  onChange={(e)=>setDescription(e.target.value)} className='w-full  rounded-lg p-3 border-none outline-none text-blue-950 font-bold bg-orange-300' placeholder='Description...'></textarea>
                    
                    <div className="flex gap-2 items-center ">
-                    <p className='gradient font-bold px-2 rounded-lg py-3 max-sm:py-1'>Upload Thumbnail </p>
+                    <p className='gradient font-bold px-2 rounded-lg py-3 max-sm:py-1'>Upload Thumbnail (<1mb) </p>
                     <label className="block">
                         <span className="sr-only">Choose profile photo</span>
                         <input type="file" onChange={(e)=>setThumbnail(e.target.files[0])}   accept="image/*" className="block w-full text-sm text-slate-500
@@ -54,7 +54,7 @@ const Upload = () => {
                     </label>
                     </div>
                    <div className="flex gap-2 items-center ">
-                    <p className='gradient font-bold px-2 rounded-lg py-3 max-sm:py-1'>Upload Video </p>
+                    <p className='gradient font-bold px-2 rounded-lg py-3 max-sm:py-1'>Upload Video (<1.5mb)</p>
                     <label className="block">
                         <span className="sr-only">Choose profile photo</span>
                         <input type="file" onChange={(e)=>setVideo(e.target.files[0])} accept="video/*" className=" block w-full text-sm text-slate-500
